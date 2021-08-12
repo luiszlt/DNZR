@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.dashboard.DashboardFragment">
+
+        <TextView
+            android:id="@+id/user_name_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:textSize="16dp"
+            tools:text="UserName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/text_dashboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Dance Styles:"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/user_name_label" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/styles_chipgroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_dashboard">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/bachata_chip"
+                name="bachata_chip"
+                style="@style/Profile_Chip"
+                android:text="@string/bachata_desc" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/blues_chip"
+                name="blues_chip"
+                style="@style/Profile_Chip"
+                android:text="@string/blues_desc" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/salsa_chip"
+                name="salsa_chip"
+                style="@style/Profile_Chip"
+                android:text="@string/salsa_desc" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/swing_chip"
+                name="swing_chip"
+                style="@style/Profile_Chip"
+                android:text="@string/swing_desc" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/tango_chip"
+                name="tango_chip"
+                style="@style/Profile_Chip"
+                android:text="@string/tango_desc" />
+        </com.google.android.material.chip.ChipGroup>
+
+        <TextView
+            android:id="@+id/text_roles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Roles:"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/styles_chipgroup" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/roles_chipgroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_roles">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/lead_chip"
+                name="lead_chip"
+                style="@style/Profile_Chip"
+                android:text="@string/lead_desc" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/follow_chip"
+                name="follow_chip"
+                style="@style/Profile_Chip"
+                android:text="@string/follow_desc" />
+
+
+        </com.google.android.material.chip.ChipGroup>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/intro_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:hint="Introduce yourself"
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/roles_chipgroup">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/status_desc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minLines="2"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:scrollbars="vertical" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/save_action"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/save_action"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/intro_label" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

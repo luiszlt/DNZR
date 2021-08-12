@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">DNZR</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Profile</string>
+    <string name="title_notifications">Messages</string>
+    <string name="username">Username</string>
+    <string name="save_action">Save</string>
+    <string name="logout">Logout</string>
+    <string name="bachata_desc">bachata</string>
+    <string name="blues_desc">blues</string>
+    <string name="salsa_desc">salsa</string>
+    <string name="swing_desc">swing</string>
+    <string name="tango_desc">tango</string>
+    <string name ="lead_desc">lead</string>
+    <string name ="follow_desc">follow</string>
+</resources>

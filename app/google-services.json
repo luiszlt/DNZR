@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "406175471374",
+    "project_id": "dancefinder-319809",
+    "storage_bucket": "dancefinder-319809.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:406175471374:android:83ce7abbe980350af7295f",
+        "android_client_info": {
+          "package_name": "com.example.dnzfind"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "406175471374-hq4fre8cfuhj6c5p2robjqqv5lh52gei.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjxBKaFUTY-tRpGv8IjCFSbq4HBdbaF8E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "406175471374-hq4fre8cfuhj6c5p2robjqqv5lh52gei.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
